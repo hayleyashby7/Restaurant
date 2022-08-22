@@ -1,1 +1,3 @@
-console.log("Restaurant loaded.");
+import { generateMain } from "./pageLoad";
+
+generateMain();
