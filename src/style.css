@@ -2,9 +2,14 @@
 	margin: 0;
 }
 
+body {
+	background-color: #ffe8d6;
+	color: #ddbea9;
+}
+
 #content {
 	display: grid;
-	grid-template-rows: 250px auto;
+	grid-template-rows: 30% auto;
 	grid-template-areas: "header" "main-content";
 }
 
@@ -16,8 +21,8 @@
 	background-repeat: no-repeat;
 	color: white;
 	display: grid;
-	grid-template-columns: 150px auto;
-	grid-template-rows: 100px auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 3fr;
 	grid-template-areas: "logo info" "title title";
 	justify-content: space-between;
 }
@@ -43,5 +48,7 @@
 
 .content-container {
 	grid-area: main-content;
+	color: #000;
 	margin: 3% 25% 0;
+	height: 100%;
 }
