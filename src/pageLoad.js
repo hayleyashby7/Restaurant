@@ -14,7 +14,7 @@ function generateHeader() {
 
 	const headerContent = document.createElement("h1");
 	headerContent.classList.add("header-title");
-	headerContent.innerHTML = "Three Legged Stool";
+	headerContent.innerHTML = "3 Legged Stool";
 
 	header.appendChild(headerContent);
 
@@ -34,7 +34,7 @@ function generateContent() {
 
 	const contentText = document.createElement("p");
 	contentText.classList.add("content-text");
-	contentText.innerHTML = "EXAMPLE TEXT FOR NOW";
+	contentText.innerHTML = "Whether it's a quick lunch on your own or a long hearty dinner with friends, there's always a warm welcome at the 3 Legged Stool.";
 
 	content.appendChild(contentText);
 
