@@ -13,7 +13,7 @@ function generateHeader() {
 	header.classList.add("header-container");
 
 	const headerContent = document.createElement("h1");
-	headerContent.classList.add("header-title");
+	headerContent.classList.add("header-text");
 	headerContent.innerHTML = "3 Legged Stool";
 
 	header.appendChild(headerContent);
