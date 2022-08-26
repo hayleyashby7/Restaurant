@@ -3,7 +3,6 @@ export function generatePage() {
 	const content = document.getElementById("content");
 
 	content.appendChild(generateHeader());
-	content.appendChild(generateNav());
 	content.appendChild(generateContent());
 	content.appendChild(generateFooter());
 }
@@ -18,12 +17,29 @@ function generateHeader() {
 
 	header.appendChild(headerContent);
 
+	header.appendChild(generateNav());
+
 	return header;
 }
 function generateNav() {
 	const navBar = document.createElement("nav");
 	navBar.classList.add("nav-bar");
 	navBar.setAttribute("role", "navigation");
+
+	const about = document.createElement("button");
+	about.classList.add("nav-btn", "about");
+	about.innerHTML = "About";
+	navBar.appendChild(about);
+
+	const menu = document.createElement("button");
+	menu.classList.add("nav-btn", "menu");
+	menu.innerHTML = "Menu";
+	navBar.appendChild(menu);
+
+	const contact = document.createElement("button");
+	contact.classList.add("nav-btn", "contact");
+	contact.innerHTML = "Contact";
+	navBar.appendChild(contact);
 
 	return navBar;
 }

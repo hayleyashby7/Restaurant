@@ -1,5 +1,7 @@
 * {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 #content {
@@ -21,14 +23,21 @@
 	background-image: linear-gradient(rgba(17, 19, 19, 0), rgba(17, 19, 19, 0.9));
 	font-family: "Tangerine", cursive;
 	font-size: 56px;
-	padding: 10px 0;
+	padding: 10px;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+	flex-flow: column nowrap;
+	align-items: center;
 }
 
 .nav-bar {
-	background-color: rgba(17, 19, 19, 0.9);
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	transition-property: all;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .content-container {
@@ -52,4 +61,58 @@
 	flex-flow: row nowrap;
 	justify-content: center;
 	background-image: linear-gradient(rgba(17, 19, 19, 0), rgba(17, 19, 19, 0.9));
+}
+
+.nav-btn {
+	border: none;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	color: #fed4ad;
+	cursor: pointer;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 45px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	font-family: "Caveat", cursive;
+	letter-spacing: 0;
+	padding: 0 1em;
+}
+
+.nav-btn:hover {
+	text-decoration: none;
+}
+
+.nav-btn:hover,
+.nav-bar:active {
+	letter-spacing: 5px;
+}
+
+.nav-btn:after,
+.nav-bar:before {
+	backface-visibility: hidden;
+	border: 1px solid rgba(254, 212, 173, 0);
+	bottom: 0px;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	transition: all 280ms ease-in-out;
+	width: 0;
+}
+
+.nav-btn:hover:after,
+.nav-btn:hover:before {
+	backface-visibility: hidden;
+	border-color: #fed4ad;
+	transition: width 350ms ease-in-out;
+	width: 70%;
+}
+
+.nav-btn:hover:before {
+	bottom: auto;
+	top: 0;
+	width: 70%;
 }
