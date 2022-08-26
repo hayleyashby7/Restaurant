@@ -1,3 +1,3 @@
-import { generateMain } from "./pageLoad";
+import { generatePage } from "./pageLoad";
 
-generateMain();
+generatePage();
