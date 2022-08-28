@@ -20,7 +20,7 @@ function generateHeader() {
 
 	const headerContent = document.createElement("h1");
 	headerContent.classList.add("header-text");
-	headerContent.innerHTML = "3 Legged Stool";
+	headerContent.innerHTML = "Three Legged Stool";
 
 	header.appendChild(headerContent);
 
