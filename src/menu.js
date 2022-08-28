@@ -37,26 +37,45 @@ function addItem(item) {
 	const menuItem = document.createElement("div");
 	menuItem.classList.add("menu-item");
 
+	menuItem.appendChild(addItemName(item));
+	menuItem.appendChild(document.createElement("br"));
+
+	menuItem.appendChild(addItemImage(item));
+	menuItem.appendChild(document.createElement("br"));
+
+	menuItem.appendChild(addItemText(item));
+	menuItem.appendChild(document.createElement("br"));
+
+	menuItem.appendChild(addItemPrice(item));
+
+	return menuItem;
+}
+
+function addItemName(item) {
 	const itemName = document.createElement("h1");
 	itemName.innerHTML = item.getName();
 
-	const itemImage = document.createElement("img");
-	itemName.setAttribute("src", item.getImage());
-	itemName.setAttribute("alt", item.getName());
+	return itemName;
+}
 
+function addItemImage(item) {
+	const itemImage = document.createElement("img");
+	itemImage.setAttribute("src", item.getImage());
+	itemImage.setAttribute("alt", item.getName());
+
+	return itemImage;
+}
+
+function addItemText(item) {
 	const itemText = document.createElement("p");
 	itemText.innerHTML = item.getDescription();
 
+	return itemText;
+}
+
+function addItemPrice(item) {
 	const itemPrice = document.createElement("p");
 	itemPrice.innerHTML = item.getPrice();
 
-	menuItem.appendChild(itemName);
-	menuItem.appendChild(document.createElement("br"));
-	menuItem.appendChild(itemImage);
-	menuItem.appendChild(document.createElement("br"));
-	menuItem.appendChild(itemText);
-	menuItem.appendChild(document.createElement("br"));
-	menuItem.appendChild(itemPrice);
-
-	return menuItem;
+	return itemPrice;
 }
