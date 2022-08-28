@@ -1,3 +1,5 @@
+import { aboutContent } from "./about.js";
+
 // Generate Page
 export function generatePage() {
 	const content = document.getElementById("content");
@@ -5,6 +7,11 @@ export function generatePage() {
 	content.appendChild(generateHeader());
 	content.appendChild(generateContent());
 	content.appendChild(generateFooter());
+}
+
+export function updateContentText(contentText) {
+	const content = document.getElementsByClassName("content-container")[0];
+	content.replaceChild(contentText, content.childNodes[0]);
 }
 
 function generateHeader() {
@@ -21,6 +28,7 @@ function generateHeader() {
 
 	return header;
 }
+
 function generateNav() {
 	const navBar = document.createElement("nav");
 	navBar.classList.add("nav-bar");
@@ -48,9 +56,7 @@ function generateContent() {
 	const content = document.createElement("main");
 	content.classList.add("content-container");
 
-	const contentText = document.createElement("p");
-	contentText.classList.add("content-text");
-	contentText.innerHTML = "Whether it's a quick lunch on your own or a long hearty dinner with friends, there's always a warm welcome at the 3 Legged Stool.";
+	const contentText = aboutContent();
 
 	content.appendChild(contentText);
 

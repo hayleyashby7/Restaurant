@@ -10,13 +10,53 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"aboutContent\": () => (/* binding */ aboutContent)\n/* harmony export */ });\nfunction aboutContent() {\n\tconst aboutDiv = document.createElement(\"div\");\n\taboutDiv.classList.add(\"content-text\");\n\taboutDiv.innerHTML = \"Whether it's a quick lunch on your own or a long hearty dinner with friends, there's always a warm welcome at the Three Legged Stool.\";\n\n\treturn aboutDiv;\n}\n\n\n//# sourceURL=webpack://restaurant/./src/about.js?");
+
+/***/ }),
+
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactContent\": () => (/* binding */ contactContent)\n/* harmony export */ });\nfunction contactContent() {\n\tconst contactDiv = document.createElement(\"div\");\n\n\tcontactDiv.classList.add(\"contact-div\");\n\tcontactDiv.innerHTML = \"CONTACT US TEST\";\n\n\treturn contactDiv;\n}\n\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+
+/***/ }),
+
+/***/ "./src/events.js":
+/*!***********************!*\
+  !*** ./src/events.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addBtnEvent\": () => (/* binding */ addBtnEvent)\n/* harmony export */ });\nfunction addBtnEvent(buttonName, handler) {\n\tlet button = \"\";\n\n\tswitch (buttonName) {\n\t\tcase \"about\":\n\t\t\tbutton = document.getElementsByClassName(\"nav-btn about\")[0];\n\t\t\tbreak;\n\t\tcase \"menu\":\n\t\t\tbutton = document.getElementsByClassName(\"nav-btn menu\")[0];\n\t\t\tbreak;\n\t\tcase \"contact\":\n\t\t\tbutton = document.getElementsByClassName(\"nav-btn contact\")[0];\n\t\t\tbreak;\n\t\tdefault:\n\t\t\tbreak;\n\t}\n\n\tif (button != \"\") {\n\t\tbutton.addEventListener(\"click\", handler);\n\t}\n}\n\n\n//# sourceURL=webpack://restaurant/./src/events.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.generatePage)();\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _events_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./events.js */ \"./src/events.js\");\n\n\n\n\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.generatePage)();\nsetPageEvents();\n\nfunction setPageEvents() {\n\t(0,_events_js__WEBPACK_IMPORTED_MODULE_4__.addBtnEvent)(\"about\", loadAbout);\n\t(0,_events_js__WEBPACK_IMPORTED_MODULE_4__.addBtnEvent)(\"menu\", loadMenu);\n\t(0,_events_js__WEBPACK_IMPORTED_MODULE_4__.addBtnEvent)(\"contact\", loadContact);\n}\n\nfunction loadAbout() {\n\t(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.updateContentText)((0,_about_js__WEBPACK_IMPORTED_MODULE_1__.aboutContent)());\n}\n\nfunction loadMenu() {\n\t(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.updateContentText)((0,_menu_js__WEBPACK_IMPORTED_MODULE_3__.menuContent)());\n}\n\nfunction loadContact() {\n\t(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.updateContentText)((0,_contact_js__WEBPACK_IMPORTED_MODULE_2__.contactContent)());\n}\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuContent\": () => (/* binding */ menuContent)\n/* harmony export */ });\nfunction menuContent() {\n\tconst menuDiv = document.createElement(\"div\");\n\n\tmenuDiv.classList.add(\"menu-div\");\n\tmenuDiv.innerHTML = \"MENU TEST\";\n\n\treturn menuDiv;\n}\n\n\n//# sourceURL=webpack://restaurant/./src/menu.js?");
 
 /***/ }),
 
@@ -26,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"generatePage\": () => (/* binding */ generatePage)\n/* harmony export */ });\n// Generate Page\nfunction generatePage() {\n\tconst content = document.getElementById(\"content\");\n\n\tcontent.appendChild(generateHeader());\n\tcontent.appendChild(generateContent());\n\tcontent.appendChild(generateFooter());\n}\n\nfunction generateHeader() {\n\tconst header = document.createElement(\"header\");\n\theader.classList.add(\"header-container\");\n\n\tconst headerContent = document.createElement(\"h1\");\n\theaderContent.classList.add(\"header-text\");\n\theaderContent.innerHTML = \"3 Legged Stool\";\n\n\theader.appendChild(headerContent);\n\n\theader.appendChild(generateNav());\n\n\treturn header;\n}\nfunction generateNav() {\n\tconst navBar = document.createElement(\"nav\");\n\tnavBar.classList.add(\"nav-bar\");\n\tnavBar.setAttribute(\"role\", \"navigation\");\n\n\tconst about = document.createElement(\"button\");\n\tabout.classList.add(\"nav-btn\", \"about\");\n\tabout.innerHTML = \"About\";\n\tnavBar.appendChild(about);\n\n\tconst menu = document.createElement(\"button\");\n\tmenu.classList.add(\"nav-btn\", \"menu\");\n\tmenu.innerHTML = \"Menu\";\n\tnavBar.appendChild(menu);\n\n\tconst contact = document.createElement(\"button\");\n\tcontact.classList.add(\"nav-btn\", \"contact\");\n\tcontact.innerHTML = \"Contact\";\n\tnavBar.appendChild(contact);\n\n\treturn navBar;\n}\n\nfunction generateContent() {\n\tconst content = document.createElement(\"main\");\n\tcontent.classList.add(\"content-container\");\n\n\tconst contentText = document.createElement(\"p\");\n\tcontentText.classList.add(\"content-text\");\n\tcontentText.innerHTML = \"Whether it's a quick lunch on your own or a long hearty dinner with friends, there's always a warm welcome at the 3 Legged Stool.\";\n\n\tcontent.appendChild(contentText);\n\n\treturn content;\n}\n\nfunction generateFooter() {\n\tconst footer = document.createElement(\"footer\");\n\tfooter.classList.add(\"footer-container\");\n\n\tconst footerContent = document.createElement(\"p\");\n\tfooterContent.classList.add(\"footer-text\");\n\tfooterContent.innerHTML = \"&copy Hayley Ashby 2022\";\n\n\tfooter.appendChild(footerContent);\n\n\treturn footer;\n}\n\n\n//# sourceURL=webpack://restaurant/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"generatePage\": () => (/* binding */ generatePage),\n/* harmony export */   \"updateContentText\": () => (/* binding */ updateContentText)\n/* harmony export */ });\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n\n\n// Generate Page\nfunction generatePage() {\n\tconst content = document.getElementById(\"content\");\n\n\tcontent.appendChild(generateHeader());\n\tcontent.appendChild(generateContent());\n\tcontent.appendChild(generateFooter());\n}\n\nfunction updateContentText(contentText) {\n\tconst content = document.getElementsByClassName(\"content-container\")[0];\n\tcontent.replaceChild(contentText, content.childNodes[0]);\n}\n\nfunction generateHeader() {\n\tconst header = document.createElement(\"header\");\n\theader.classList.add(\"header-container\");\n\n\tconst headerContent = document.createElement(\"h1\");\n\theaderContent.classList.add(\"header-text\");\n\theaderContent.innerHTML = \"3 Legged Stool\";\n\n\theader.appendChild(headerContent);\n\n\theader.appendChild(generateNav());\n\n\treturn header;\n}\n\nfunction generateNav() {\n\tconst navBar = document.createElement(\"nav\");\n\tnavBar.classList.add(\"nav-bar\");\n\tnavBar.setAttribute(\"role\", \"navigation\");\n\n\tconst about = document.createElement(\"button\");\n\tabout.classList.add(\"nav-btn\", \"about\");\n\tabout.innerHTML = \"About\";\n\tnavBar.appendChild(about);\n\n\tconst menu = document.createElement(\"button\");\n\tmenu.classList.add(\"nav-btn\", \"menu\");\n\tmenu.innerHTML = \"Menu\";\n\tnavBar.appendChild(menu);\n\n\tconst contact = document.createElement(\"button\");\n\tcontact.classList.add(\"nav-btn\", \"contact\");\n\tcontact.innerHTML = \"Contact\";\n\tnavBar.appendChild(contact);\n\n\treturn navBar;\n}\n\nfunction generateContent() {\n\tconst content = document.createElement(\"main\");\n\tcontent.classList.add(\"content-container\");\n\n\tconst contentText = (0,_about_js__WEBPACK_IMPORTED_MODULE_0__.aboutContent)();\n\n\tcontent.appendChild(contentText);\n\n\treturn content;\n}\n\nfunction generateFooter() {\n\tconst footer = document.createElement(\"footer\");\n\tfooter.classList.add(\"footer-container\");\n\n\tconst footerContent = document.createElement(\"p\");\n\tfooterContent.classList.add(\"footer-text\");\n\tfooterContent.innerHTML = \"&copy Hayley Ashby 2022\";\n\n\tfooter.appendChild(footerContent);\n\n\treturn footer;\n}\n\n\n//# sourceURL=webpack://restaurant/./src/pageLoad.js?");
 
 /***/ })
 
