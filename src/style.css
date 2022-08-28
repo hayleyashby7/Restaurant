@@ -120,3 +120,17 @@
 .active {
 	text-shadow: 0 0 6px #dcdddc, 0 0 10px #dcdddc, 0 0 40px #fed4ad, 0 0 80px #fed4ad, 0 0 90px #fed4ad;
 }
+
+.menu-content {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.menu-item {
+	width: 30%;
+}
+
+.menu-image {
+	max-width: 100%;
+	max-height: 100%;
+}
