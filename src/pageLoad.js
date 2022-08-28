@@ -35,7 +35,7 @@ function generateNav() {
 	navBar.setAttribute("role", "navigation");
 
 	const about = document.createElement("button");
-	about.classList.add("nav-btn", "about");
+	about.classList.add("nav-btn", "about", "active");
 	about.innerHTML = "About";
 	navBar.appendChild(about);
 

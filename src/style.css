@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition-property: all;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 #content {
@@ -35,9 +38,6 @@
 	flex-direction: row;
 	justify-content: center;
 	text-align: center;
-	transition-property: all;
-	transition-duration: 0.6s;
-	transition-timing-function: ease;
 }
 
 .content-container {
@@ -115,4 +115,8 @@
 	bottom: auto;
 	top: 0;
 	width: 70%;
+}
+
+.active {
+	text-shadow: 0 0 6px #dcdddc, 0 0 10px #dcdddc, 0 0 40px #fed4ad, 0 0 80px #fed4ad, 0 0 90px #fed4ad;
 }

@@ -13,14 +13,28 @@ function setPageEvents() {
 	addBtnEvent("contact", loadContact);
 }
 
-function loadAbout() {
+function loadAbout(event) {
+	updateNavGlow(event.target);
+
 	updateContentText(aboutContent());
 }
 
-function loadMenu() {
+function loadMenu(event) {
+	updateNavGlow(event.target);
 	updateContentText(menuContent());
 }
 
-function loadContact() {
+function loadContact(event) {
+	updateNavGlow(event.target);
 	updateContentText(contactContent());
+}
+
+function updateNavGlow(target) {
+	const navBtns = document.getElementsByClassName("nav-btn");
+
+	for (const button of navBtns) {
+		button.classList.remove("active");
+	}
+
+	target.classList.add("active");
 }
