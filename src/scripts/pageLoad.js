@@ -67,11 +67,22 @@ function generateFooter() {
 	const footer = document.createElement("footer");
 	footer.classList.add("footer-container");
 
-	const footerContent = document.createElement("p");
-	footerContent.classList.add("footer-text");
-	footerContent.innerHTML = "&copy Hayley Ashby 2022";
+	const githubLink = document.createElement("a");
+	githubLink.setAttribute("href", "https://github.com/hayleyashby7");
 
-	footer.appendChild(footerContent);
+	const logo = document.createElement("img");
+	logo.setAttribute("src", "../src/images/github.png");
+	logo.classList.add("logo");
+
+	githubLink.appendChild(logo);
+
+	footer.appendChild(githubLink);
+
+	const footerText = document.createElement("p");
+	footerText.classList.add("footer-text");
+	footerText.innerHTML = "&copy Hayley Ashby 2022";
+
+	footer.appendChild(footerText);
 
 	return footer;
 }
