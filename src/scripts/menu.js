@@ -26,9 +26,16 @@ function MenuItem(name, image, description, price) {
 export function menuContent() {
 	const menuDiv = document.createElement("div");
 
-	menuDiv.classList.add("content-text", "menu-content");
+	const mainMeals = document.createElement("button");
+	mainMeals.innerHTML = "Main Meals";
+	mainMeals.classList.add("collapse");
+	menuDiv.appendChild(mainMeals);
 
-	parseMenuData(menuDiv);
+	const menuContent = document.createElement("div");
+	menuContent.classList.add("content-text", "menu-content");
+	menuDiv.appendChild(menuContent);
+
+	parseMenuData(menuContent);
 
 	return menuDiv;
 }

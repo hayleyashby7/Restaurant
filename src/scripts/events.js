@@ -19,3 +19,11 @@ export function addBtnEvent(buttonName, handler) {
 		button.addEventListener("click", handler);
 	}
 }
+
+export function addCollapseEvent(handler) {
+	const collapseButtons = document.getElementsByClassName("collapse");
+
+	for (const button of collapseButtons) {
+		button.addEventListener("click", handler);
+	}
+}

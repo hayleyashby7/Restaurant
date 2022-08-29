@@ -1,8 +1,8 @@
-import { generatePage, updateContentText } from "./pageLoad";
+import { generatePage, updateContentText } from "./pageLoad.js";
 import { aboutContent } from "./about.js";
 import { contactContent } from "./contact.js";
 import { menuContent } from "./menu.js";
-import { addBtnEvent } from "./events.js";
+import { addBtnEvent, addCollapseEvent } from "./events.js";
 
 generatePage();
 setPageEvents();
@@ -22,6 +22,7 @@ function loadAbout(event) {
 function loadMenu(event) {
 	updateNavGlow(event.target);
 	updateContentText(menuContent());
+	addCollapseEvent(collapseMenuHandler);
 }
 
 function loadContact(event) {
@@ -37,4 +38,16 @@ function updateNavGlow(target) {
 	}
 
 	target.classList.add("active");
+}
+
+function collapseMenuHandler(event) {
+	event.target.classList.toggle("active");
+
+	const content = event.target.nextElementSibling;
+
+	if (content.style.display === "flex") {
+		content.style.display = "none";
+	} else {
+		content.style.display = "flex";
+	}
 }

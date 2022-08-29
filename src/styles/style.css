@@ -43,11 +43,8 @@
 .content-container {
 	background-image: linear-gradient(rgba(17, 19, 19, 0.9), rgba(17, 19, 19, 0));
 	border-top: 2px solid #fed4ad;
-	flex: 2;
-}
-
-.content-text {
 	font-family: "Caveat", cursive;
+	flex: 2;
 }
 
 .about-content {
@@ -120,6 +117,6 @@
 	width: 70%;
 }
 
-.active {
+.nav-bar .active {
 	text-shadow: 0 0 6px #dcdddc, 0 0 10px #dcdddc, 0 0 40px #fed4ad, 0 0 80px #fed4ad, 0 0 90px #fed4ad;
 }
