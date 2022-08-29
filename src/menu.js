@@ -29,7 +29,7 @@ export function menuContent() {
 	const testItem = new MenuItem(
 		"Ploughman's Lunch",
 		"../src/images/ploughmans.jpg",
-		"Local Wiltshire Ham, Homemade Thick-cut Bread and Butter, Sliced Apples from Local Orchard, Selection of handmade pickles and chutneys. Served with fresh salad drizzled with Balsamic Vinegar.",
+		"Wiltshire Ham, sliced apples, handmade pickles and chutneys, homemade bread & butter and fresh salad with balsamic drizzle.",
 		"9.99"
 	);
 
@@ -59,6 +59,7 @@ function addItem(item) {
 function addItemName(item) {
 	const itemName = document.createElement("h1");
 	itemName.innerHTML = item.getName();
+	itemName.classList.add("menu-name");
 
 	return itemName;
 }
@@ -75,6 +76,7 @@ function addItemImage(item) {
 function addItemText(item) {
 	const itemText = document.createElement("p");
 	itemText.innerHTML = item.getDescription();
+	itemText.classList.add("menu-desc");
 
 	return itemText;
 }
@@ -82,6 +84,7 @@ function addItemText(item) {
 function addItemPrice(item) {
 	const itemPrice = document.createElement("p");
 	itemPrice.innerHTML = item.getPrice();
+	itemPrice.classList.add("menu-price");
 
 	return itemPrice;
 }

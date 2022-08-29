@@ -15,7 +15,7 @@
 	justify-content: space-around;
 	background-color: #ffe8d6;
 	color: #ddbea9;
-	background-image: url("../src/bg-bar.jpg");
+	background-image: url("../images/bg-bar.jpg");
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -47,9 +47,12 @@
 }
 
 .content-text {
-	color: #fed4ad;
 	font-family: "Caveat", cursive;
+}
+
+.about-content {
 	font-size: 42px;
+	color: #fed4ad;
 	padding: 0 15%;
 }
 
@@ -119,18 +122,4 @@
 
 .active {
 	text-shadow: 0 0 6px #dcdddc, 0 0 10px #dcdddc, 0 0 40px #fed4ad, 0 0 80px #fed4ad, 0 0 90px #fed4ad;
-}
-
-.menu-content {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.menu-item {
-	width: 30%;
-}
-
-.menu-image {
-	max-width: 100%;
-	max-height: 100%;
 }
