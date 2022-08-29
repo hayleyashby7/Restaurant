@@ -1,3 +1,5 @@
+import data from "../data/menu.json";
+
 function MenuItem(name, image, description, price) {
 	this.name = name;
 	this.image = image;
@@ -26,16 +28,18 @@ export function menuContent() {
 
 	menuDiv.classList.add("content-text", "menu-content");
 
-	const testItem = new MenuItem(
-		"Ploughman's Lunch",
-		"../src/images/ploughmans.jpg",
-		"Wiltshire Ham, sliced apples, handmade pickles and chutneys, homemade bread & butter and fresh salad with balsamic drizzle.",
-		"9.99"
-	);
-
-	menuDiv.appendChild(addItem(testItem));
+	parseMenuData(menuDiv);
 
 	return menuDiv;
+}
+
+function parseMenuData(menuDiv) {
+	const fullMenu = data.Menu;
+
+	for (const item of fullMenu) {
+		const newItem = new MenuItem(item.Name, item.Image, item.Text, item.Price);
+		menuDiv.appendChild(addItem(newItem));
+	}
 }
 
 function addItem(item) {
