@@ -26,26 +26,65 @@ function MenuItem(name, image, description, price) {
 export function menuContent() {
 	const menuDiv = document.createElement("div");
 
-	const mainMeals = document.createElement("button");
-	mainMeals.innerHTML = "Main Meals";
-	mainMeals.classList.add("collapse");
-	menuDiv.appendChild(mainMeals);
+	menuDiv.appendChild(addMainsCollapse());
+	menuDiv.appendChild(addMainsContent());
 
-	const menuContent = document.createElement("div");
-	menuContent.classList.add("content-text", "menu-content");
-	menuDiv.appendChild(menuContent);
+	menuDiv.appendChild(addDessertCollapse());
+	menuDiv.appendChild(addDessertsContent());
 
-	parseMenuData(menuContent);
+	parseMenuData(menuDiv);
 
 	return menuDiv;
 }
 
+function addMainsCollapse() {
+	const mainMeals = document.createElement("button");
+	mainMeals.innerHTML = "Main Meals";
+	mainMeals.classList.add("collapse");
+
+	return mainMeals;
+}
+
+function addMainsContent() {
+	const mainsContent = document.createElement("div");
+	mainsContent.classList.add("content-text", "menu-content", "mains");
+
+	return mainsContent;
+}
+
+function addDessertCollapse() {
+	const desserts = document.createElement("button");
+	desserts.innerHTML = "Desserts";
+	desserts.classList.add("collapse");
+
+	return desserts;
+}
+
+function addDessertsContent() {
+	const dessertsContent = document.createElement("div");
+	dessertsContent.classList.add("content-text", "menu-content", "desserts");
+
+	return dessertsContent;
+}
+
 function parseMenuData(menuDiv) {
 	const fullMenu = data.Menu;
+	const mains = menuDiv.querySelectorAll(".mains")[0];
+	const desserts = menuDiv.querySelectorAll(".desserts")[0];
 
 	for (const item of fullMenu) {
 		const newItem = new MenuItem(item.Name, item.Image, item.Text, item.Price);
-		menuDiv.appendChild(addItem(newItem));
+
+		switch (item.Course) {
+			case "Main":
+				mains.appendChild(addItem(newItem));
+				break;
+			case "Dessert":
+				desserts.appendChild(addItem(newItem));
+				break;
+			default:
+				break;
+		}
 	}
 }
 

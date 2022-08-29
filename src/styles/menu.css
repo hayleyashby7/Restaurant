@@ -49,6 +49,7 @@
 	border: none;
 	text-align: left;
 	outline: none;
+	margin-top: 10px;
 }
 
 .collapse:hover,
