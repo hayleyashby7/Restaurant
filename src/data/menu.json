@@ -2,21 +2,21 @@
 	"Menu": [
 		{
 			"Course": "Main",
-			"Name": "Ploughman's",
+			"Name": "Ploughman's Lunch",
 			"Image": "../src/images/ploughmans.jpg",
 			"Text": "Wiltshire Ham, sliced apples, handmade pickles and chutneys, homemade bread & butter and fresh salad with balsamic drizzle.",
 			"Price": 5.99
 		},
 		{
 			"Course": "Main",
-			"Name": "Roast",
+			"Name": "Roast Dinner",
 			"Image": "../src/images/roast.jpg",
 			"Text": "Roast beef/chicken/nutroast, roast potatoes, Yorkshire pudding and seasonal veg. Served with gravy. Vegan/Vegetarian options available.",
 			"Price": 9.99
 		},
 		{
 			"Course": "Main",
-			"Name": "Stew",
+			"Name": "Stew & Dumplings",
 			"Image": "../src/images/stew.jpg",
 			"Text": "Beef or Root Veg slow cooked stew with homemade suet dumplings. Served with homemade bread. Vegan/Vegetarian options available.",
 			"Price": 6.99
@@ -25,7 +25,7 @@
 			"Course": "Main",
 			"Name": "Fish & Chips",
 			"Image": "../src/images/fish.jpg",
-			"Text": "Beer battered cod and handcut chips fried to order. Served with mushy peas and tartare sauce.",
+			"Text": "Beer battered cod and handcut golden chips, fried to order. Served with mushy peas and tartare sauce.",
 			"Price": 6.99
 		}
 	]

@@ -47,14 +47,8 @@ function addItem(item) {
 	menuItem.classList.add("menu-item");
 
 	menuItem.appendChild(addItemName(item));
-	menuItem.appendChild(document.createElement("br"));
-
 	menuItem.appendChild(addItemImage(item));
-	menuItem.appendChild(document.createElement("br"));
-
 	menuItem.appendChild(addItemText(item));
-	menuItem.appendChild(document.createElement("br"));
-
 	menuItem.appendChild(addItemPrice(item));
 
 	return menuItem;
