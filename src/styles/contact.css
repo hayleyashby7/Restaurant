@@ -3,6 +3,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 1rem;
 	font-size: 25px;
+	padding: 10px 20px;
 }
 
 .hours {
@@ -35,4 +36,8 @@ svg {
 	fill: rgba(254, 212, 173, 1);
 	width: 25px;
 	height: 25px;
+}
+
+.map {
+	flex: 3;
 }

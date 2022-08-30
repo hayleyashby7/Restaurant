@@ -9,23 +9,29 @@ export function contactContent() {
 
 	contactDiv.classList.add("content-text", "contact-content");
 
-	contactDiv.appendChild(addAddress());
+	contactDiv.appendChild(addMap());
 	contactDiv.appendChild(addHours());
 	contactDiv.appendChild(addContactDetails());
 
 	return contactDiv;
 }
 
-function addAddress() {
-	const address = document.createElement("div");
-	address.classList.add("address");
+function addMap() {
+	const map = document.createElement("div");
+	map.classList.add("map");
 
 	const header = document.createElement("h1");
-	header.innerHTML = "Address";
+	header.innerHTML = "We're Here!";
 
-	address.appendChild(header);
+	map.appendChild(header);
 
-	return address;
+	const mapImage = document.createElement("img");
+	mapImage.classList.add("contact-map");
+	mapImage.src = "../src/images/map.png";
+
+	map.appendChild(mapImage);
+
+	return map;
 }
 
 function addHours() {
