@@ -25,3 +25,14 @@ table {
 td {
 	padding: 5px;
 }
+
+.contact-method {
+	display: flex;
+	gap: 10px;
+}
+
+svg {
+	fill: rgba(254, 212, 173, 1);
+	width: 25px;
+	height: 25px;
+}
