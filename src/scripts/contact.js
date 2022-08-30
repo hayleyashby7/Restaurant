@@ -108,5 +108,3 @@ function parseContact() {
 
 	return methods;
 }
-
-function loadIcon() {}
