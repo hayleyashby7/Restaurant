@@ -1,43 +1,25 @@
 .contact-content {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 	grid-gap: 1rem;
 	font-size: 25px;
 	padding: 10px 20px;
+	justify-content: center;
+	text-align: start;
 }
-
-.hours {
-	justify-self: center;
-	display: flex;
-	flex-flow: column nowrap;
-	background-color: rgba(17, 19, 19, 1);
-	color: rgba(254, 212, 173, 0.7);
-	border-radius: 15px;
-}
-
-.hours h1 {
-	padding: 0px 15px 0px 10px;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-td {
-	padding: 5px;
-}
-
 .contact-method {
 	display: flex;
 	gap: 10px;
+}
+
+.contact-map {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
 }
 
 svg {
 	fill: rgba(254, 212, 173, 1);
 	width: 25px;
 	height: 25px;
-}
-
-.map {
-	flex: 3;
 }
