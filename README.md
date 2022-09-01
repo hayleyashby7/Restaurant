@@ -1,4 +1,6 @@
-"Three Legged Stool" Restaurant - a example single page site for a small business - WIP
+WIP
+
+"Three Legged Stool" Restaurant - a example single page site for a small business
 
 DEMO: https://hayleyashby7.github.io/Restaurant/
 
