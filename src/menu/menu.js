@@ -35,7 +35,6 @@ export function menuContent() {
 	menuDiv.appendChild(addDessertsContent());
 
 	importMenuImages();
-	console.log(imgCache);
 	parseMenuData(menuDiv);
 
 	return menuDiv;
@@ -125,7 +124,6 @@ function addItemImage(item) {
 	itemImage.classList.add('menu-image');
 
 	const imageName = './' + item.getImage() + '.jpg';
-	console.log(imageName);
 	itemImage.setAttribute('src', imgCache[imageName]);
 	itemImage.setAttribute('alt', item.getName());
 
