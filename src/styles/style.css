@@ -4,29 +4,43 @@
 	box-sizing: border-box;
 }
 
+html {
+	background-image: url("../images/bg-bar.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 #content {
 	min-height: 100vh;
 	min-width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
-	background-color: #ffe8d6;
 	color: #ddbea9;
-	background-image: url("../images/bg-bar.jpg");
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
 }
 
 .header-container {
 	color: #fed4ad;
 	background-image: linear-gradient(rgba(17, 19, 19, 0), rgba(17, 19, 19, 0.9));
 	font-family: "Tangerine", cursive;
-	font-size: 56px;
 	padding: 10px;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+}
+
+@media only screen and (min-width: 601px) {
+	.header-container {
+		font-size: 56px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.header-container {
+		font-size: 42px;
+	}
 }
 
 .nav-bar {
