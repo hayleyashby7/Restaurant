@@ -1,0 +1,53 @@
+{
+	"Menu": [
+		{
+			"Course": "Main",
+			"Name": "Ploughman's",
+			"Image": "ploughmans",
+			"Text": "Wiltshire Ham, sliced apples, handmade pickles and chutneys, homemade bread & butter and fresh salad with balsamic drizzle.",
+			"Price": 5.99
+		},
+		{
+			"Course": "Main",
+			"Name": "Roast",
+			"Image": "roast",
+			"Text": "Roast beef/chicken/nutroast, roast potatoes, Yorkshire pudding and seasonal veg. Served with gravy. Vegan/Vegetarian options available.",
+			"Price": 9.99
+		},
+		{
+			"Course": "Main",
+			"Name": "Stew",
+			"Image": "stew",
+			"Text": "Beef or Root Veg slow cooked stew with homemade suet dumplings. Served with homemade bread. Vegan/Vegetarian options available.",
+			"Price": 6.99
+		},
+		{
+			"Course": "Main",
+			"Name": "Fish & Chips",
+			"Image": "fish",
+			"Text": "Beer battered cod and handcut golden chips, fried to order. Served with mushy peas and tartare sauce.",
+			"Price": 6.99
+		},
+		{
+			"Course": "Dessert",
+			"Name": "Sticky Toffee Pud",
+			"Image": "toffee",
+			"Text": "Fluffy date-studded sponge drenched in homemade toffee sauce. Served with choice of custard or ice cream.",
+			"Price": 5.99
+		},
+		{
+			"Course": "Dessert",
+			"Name": "Banana Split",
+			"Image": "banana",
+			"Text": "Halved banana encasing chocolate, vanilla and strawberry ice cream, chocolate sauce, syrup and glace cherries.",
+			"Price": 4.99
+		},
+		{
+			"Course": "Dessert",
+			"Name": "Cheesecake",
+			"Image": "cheesecake",
+			"Text": "Traditional lemon cheesecake made with cream cheese, crushed digestive base, and a rich citrus topping. Fresh local fruit garnish.",
+			"Price": 5.99
+		}
+	]
+}

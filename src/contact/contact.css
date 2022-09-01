@@ -1,0 +1,25 @@
+.contact-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+	grid-gap: 1rem;
+	font-size: 25px;
+	padding: 10px 20px;
+	justify-content: center;
+	text-align: start;
+}
+.contact-method {
+	display: flex;
+	gap: 10px;
+}
+
+.contact-map {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+}
+
+svg {
+	fill: rgba(254, 212, 173, 1);
+	width: 25px;
+	height: 25px;
+}

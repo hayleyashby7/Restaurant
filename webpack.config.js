@@ -1,17 +1,25 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-	mode: "development",
-	entry: "./src/scripts/index.js",
+	mode: 'development',
+	entry: './src/index.js',
 	output: {
-		filename: "main.js",
-		path: path.resolve(__dirname, "dist"),
+		filename: 'main.js',
+		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
 		rules: [
 			{
-				test: /\.svg$/,
-				loader: "svg-inline-loader",
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			},
+			{
+				test: /\.(png|jpg)$/i,
+				type: 'asset/resource',
+			},
+			{
+				test: /\.svg$/i,
+				use: { loader: 'svg-inline-loader' },
 			},
 		],
 	},
