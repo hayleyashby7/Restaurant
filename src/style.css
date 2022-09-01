@@ -5,11 +5,17 @@
 }
 
 html {
-	background-image: url("./bg-bar.jpg");
+	background-image: url('./bg-bar.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+	display: block;
 }
 
 #content {
@@ -19,12 +25,13 @@ html {
 	flex-flow: column nowrap;
 	justify-content: space-around;
 	color: #ddbea9;
+	font-size: 100%;
 }
 
 .header-container {
 	color: #fed4ad;
 	background-image: linear-gradient(rgba(17, 19, 19, 0), rgba(17, 19, 19, 0.9));
-	font-family: "Tangerine", cursive;
+	font-family: 'Tangerine', cursive;
 	padding: 10px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -57,7 +64,7 @@ html {
 .content-container {
 	background-image: linear-gradient(rgba(17, 19, 19, 0.9), rgba(17, 19, 19, 0));
 	border-top: 2px solid #fed4ad;
-	font-family: "Caveat", cursive;
+	font-family: 'Caveat', cursive;
 	flex: 2;
 	text-align: center;
 	padding: 0 15%;
@@ -65,7 +72,7 @@ html {
 
 .footer-container {
 	color: #fed4ad;
-	font-family: "Caveat", cursive;
+	font-family: 'Caveat', cursive;
 	font-size: 30px;
 	display: flex;
 	flex-flow: row nowrap;
@@ -86,7 +93,7 @@ html {
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 100%;
-	font-family: "Caveat", cursive;
+	font-family: 'Caveat', cursive;
 	letter-spacing: 0;
 	padding: 0 1em;
 }
@@ -105,7 +112,7 @@ html {
 	backface-visibility: hidden;
 	border: 1px solid rgba(254, 212, 173, 0);
 	bottom: 0px;
-	content: " ";
+	content: ' ';
 	display: block;
 	margin: 0 auto;
 	position: relative;
