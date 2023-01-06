@@ -1,8 +1,6 @@
 WIP
 
-An example single page site, such as for a small business, in this case the imaginary "Three Legged Stool" Restaurant
-
-DEMO: https://hayleyashby7.github.io/Restaurant/
+An example single page site, such as for a small business, in this case the imaginary "Three Legged Stool" Restaurant.
 
 The site has a single page layout with static header section and a set of tabbed sections for About, Menu and Contact information. 
 
